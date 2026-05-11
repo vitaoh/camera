@@ -1,4 +1,4 @@
-package com.victor.camera.ui
+package com.victor.camera.view
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), CameraHelper.Callback {
             verificarPermissaoETirarFoto()
         }
 
-        // --- CONFIGURAÇÃO DO NOVO DROPDOWN (SUBSTITUIU O SPINNER) ---
+        // Adapter dos filtros
         val adapter = ArrayAdapter(
             this,
             android.R.layout.simple_list_item_1,
